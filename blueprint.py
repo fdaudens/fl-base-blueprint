@@ -13,7 +13,7 @@ COPY_FILES = ('bower.json', 'config.rb', 'requirements.in', 'requirements.txt')
 COPY_DIRS = ('_scss', 'font')
 
 blueprint = Blueprint('base', __name__)
-
+root = os.path.realpath(os.path.dirname(__file__))
 
 @blueprint.app_template_global('p')
 def path_helper(path, **kwargs):
@@ -29,11 +29,11 @@ def copy_project_files(site, git):
     Copy useful files into project path
     """
     for filename in COPY_FILES:
-        src = os.path.realpath(filename)
+        src = os.path.join(root, filename)
         dst = os.path.join(site.path, filename)
         shutil.copy2(src, dst)
 
     for dirname in COPY_DIRS:
-        src = os.path.realpath(dirname)
+        src = os.path.join(root, dirname)
         dst = os.path.join(site.path, dirname)
         shutil.copytree(src, dst)

@@ -26,14 +26,14 @@ def path_helper(path, **kwargs):
 @register_hook('newproject')
 def copy_project_files(site, git):
     """
-    Copy useful files into project root
+    Copy useful files into project path
     """
     for filename in COPY_FILES:
         src = os.path.realpath(filename)
-        dst = os.path.join(site.root, filename)
+        dst = os.path.join(site.path, filename)
         shutil.copy2(src, dst)
 
     for dirname in COPY_DIRS:
         src = os.path.realpath(dirname)
-        dst = os.path.join(site.root, dirname)
+        dst = os.path.join(site.path, dirname)
         shutil.copytree(src, dst)

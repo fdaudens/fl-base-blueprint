@@ -1,0 +1,129 @@
+/* -- colors -- */
+
+$fl-red: #c92325;
+$co-gray-flatdark: #333;
+$co-gray-dark8: rgba(0,0,0,0.8);
+$co-gray-dark7: rgba(0,0,0,0.7);
+$co-copy: #4C4C4C;
+$co-gray-mid6: rgba(0,0,0,0.6);
+$co-gray-mid4: rgba(0,0,0,0.4);
+$co-gray-flat4: #999;
+$co-gray-mid2: rgba(0,0,0,0.2);
+$co-gray-flat2: #ccc;
+$co-gray-light1: rgba(0,0,0,0.1);
+$co-gray-flat1: #e5e5e5;
+$co-gray-light05: #f2f2f2;
+$co-white-mid6: rgba(255,255,255,0.6);
+$co-white-mid3: rgba(255,255,255,0.3);
+$co-white-light2: rgba(255,255,255,0.2);
+$co-facebook: #3d5a98;
+$co-twitter: #55acee;
+
+/* -- borders and rules -- */
+
+$hr: 1px solid $co-gray-light1;
+$hr-white: 1px solid $co-white-light2;
+$hr-tic: 2px solid $co-gray-light1;
+$underline-gray2: 1px solid $co-gray-mid2;
+$underline-gray4: 1px solid $co-gray-mid4;
+
+/* -- font-size -- */
+
+$size-dis-super: 7.5em; //120px
+$size-dis-super-m: 5.375em; //86px
+$size-dis-lg: 6em; //96px
+$size-dis-lg-m: 2.6875em; //43px
+$size-dis-med: 4.125em; //66px
+$size-dis-med-m: 2.25em; //36px
+
+$size-h1: 3.6875em; //59px
+$size-h1-m: 2.25em; //36px
+$size-h2: 2.6875em; //43px
+$size-h2-m: 1.9375em; //31px
+$size-h3: 2.25em; //36px
+$size-h3-m: 1.6875em; //27px
+$size-h4: 1.875em; //30px
+$size-h4-m: 1.5em; //24px
+$size-h5: 1.5625em; //25px
+$size-h5-m: 1.3125em; //21px
+$size-h6: 1.3125em; //21px
+$size-h6-m: 1.125em; //18px
+$size-body: 1.25em; //20px
+$size-body-m: 1.1875em; //19px
+$size-p-sm: 1em; //16px
+$size-info-lg: 0.9375em; //15px
+$size-info: 0.875em; //14px
+$size-info-sm: 0.8125em; //13px
+
+/* -- line-height -- */
+
+$lineheight-lg: 1.725em;
+$lineheight-med: 1.6em;
+$lineheight-sm: 1.3em;
+$lineheight-exsm: 1.15em;
+
+/* -- margins -- */
+
+$margin-type: 1em;
+$margin-type-sm: .5em;
+$margin-type-lg: 1.5em;
+$gutter-half: 15px;
+$gutter: 30px;
+$gutter2: 60px;
+$gutter3: 90px;
+
+/* -- letterspacing -- */
+
+$letterspacing: .1em;
+$letterspacing-sm: .05em;
+$letterspacing-mid: .075em;
+$letterspacing-exsmall: .025em;
+
+/* -- font-family -- */
+
+$bernino: 'bernino-regular', sans-serif;
+$bernino-semi: 'bernino-semi', sans-serif;
+$bernino-italic: 'bernino-regular-italic', sans-serif;
+$bernino-semi-italic: 'bernino-semi-italic', sans-serif;
+$cooper-light: 'cooper_hewittlight', sans-serif;
+$cooper-medium: 'cooper_hewittmedium', sans-serif;
+$cooper-light-italic: 'cooper_hewittlight_italic', sans-serif;
+$cooper-medium-italic: 'cooper_hewittmedium_italic', sans-serif;
+$cooper-bold: 'cooper_hewittbold', sans-serif;
+
+/* -- font-weight -- */
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi: 600;
+
+/* ----- grid ----- */
+
+$col-1: 8.3333333%;
+$col-2: 16.666667%;
+$col-3: 25%;
+$col-35: 29.166667%;
+$col-4: 33.333333%;
+$col-5: 41.666667%;
+$col-6: 50%;
+$col-7: 58.333333%;
+$col-8: 66.666667%;
+$col-9: 75%;
+$col-10: 83.333333%;
+$col-12: 100%;
+
+$padding: 15px;
+$padding-outer: 15px;
+
+/* ----- breakpoints ----- */
+
+$bp-main: 41.25em;
+
+$bp-narrow: 510px;
+$bp-medium: 542px;
+$bp-midrange: 650px;
+$bp-wide: 890px;
+$bp-ad-reflow: 977px;
+$bp-max: 1400px;
+

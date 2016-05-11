@@ -1,0 +1,67 @@
+/* ----- grid ----- */
+
+.col-1 {
+	width: $col-1;
+}
+.col-2 {
+	width: $col-2;
+}
+.col-3 {
+	width: $col-3;
+}
+.col-35 {
+	width: $col-35;
+}
+.col-4 {
+	width: $col-4;
+}
+.col-5 {
+	width: $col-5;
+}
+.col-6 {
+	width: $col-6;
+}
+.col-7 {
+	width: $col-7;
+}
+.col-8 {
+	width: $col-8;
+}
+.col-9 {
+	width: $col-9;
+}
+.col-10 {
+	width: $col-10;
+}
+.col-12 {
+	width: $col-12;
+}
+
+/* ----- containers ----- */
+
+[class*='col-'] {
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	box-sizing: border-box;  
+}
+
+.container-full [class*='col-']:last-child {
+	padding-right: 0;
+}
+.container-full [class*='col-']:first-child {
+	padding-left: 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0;
+	@include breakpoint($bp-main) {
+		max-width: 1400px;
+		padding: 0 $padding-outer;
+	}
+}
+
+.fluid {
+	max-width: 100%;
+}

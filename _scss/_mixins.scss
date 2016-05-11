@@ -1,0 +1,77 @@
+@mixin copy {
+	font-size: $size-body;	
+	color: $co-copy;
+	line-height: $lineheight-lg;
+	font-family: $bernino;
+}
+
+@mixin copy-small {
+	color: $co-copy;
+	line-height: $lineheight-lg;
+	font-size: $size-p-sm;
+	font-family: $bernino;
+}
+
+@mixin copy-caps {
+	text-transform: uppercase;
+	letter-spacing: $letterspacing-sm;
+}
+
+@mixin copy-caption {
+	font-size: $size-info;
+	color: $co-gray-mid4;
+	line-height: $lineheight-sm;
+	font-family: $bernino;
+}
+
+@mixin copy-hed {
+	font-family: $cooper-medium;
+	font-weight: normal;
+	color: black;
+	line-height: $lineheight-sm;
+}
+
+@mixin copy-hed-display {
+	font-family: $cooper-light;
+	text-transform: uppercase;
+	letter-spacing: $letterspacing;
+	line-height: $lineheight-sm;
+}
+
+@mixin copy-hed-display-medium {
+	@include copy-hed-display;
+	font-size: $size-dis-med;
+	letter-spacing: $letterspacing-mid;	
+	@include breakpoint($bp-main) {
+		font-size: $size-dis-med-m;
+	}
+}
+
+@mixin copy-hed-display-large {
+	@include copy-hed-display;
+	font-size: $size-dis-lg;
+	@include breakpoint($bp-main) {
+		font-size: $size-dis-lg-m;
+	}
+}
+
+@mixin copy-hed-display-super {
+	@include copy-hed-display;
+	font-family: $cooper-medium;
+	font-size: $size-dis-super;
+	letter-spacing: 0;
+	color: $fl-red;
+	@include breakpoint($bp-main) {
+		font-size: $size-dis-super-m;
+	}	
+}
+
+@mixin stock-column {
+	padding: $gutter/2;
+	margin: .5em 0;
+	@include breakpoint($bp-wide) {
+		width: 685px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

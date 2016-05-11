@@ -1,0 +1,140 @@
+@import "breakpoint";
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "layout";
+@import "typography";
+@import "interactive";
+@import "pull-quote";
+@import "fact";
+@import "share-modal";
+@import "share-icons";
+@import "svg";
+@import url('../font/fonts.css');
+
+/* ----- gradients and overlays----- */
+
+.gradient-up {
+	background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	bottom: 0;
+}
+
+.gradient-up-full {
+	background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 2px;
+}
+
+.dark-overlay {
+	background-color: rgba(0,0,0,0.2);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.dark-overlay5 {
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+/* ----- general ----- */
+
+a {
+	text-decoration: none;
+}
+
+.hr-tic {
+	width: 30px;
+	height: 2px;
+	margin: 0 auto;
+	border-top: $hr-tic;
+}
+
+.hr {
+	height: 1px;
+	border-top: $hr;
+}
+
+::selection {
+	background: $co-gray-mid2;
+}
+::-moz-selection {
+	background: $co-gray-mid2;
+}
+.on-dark::selection {
+	background: $co-white-mid3;
+}
+.on-dark::-moz-selection {
+	background: $co-white-mid3;
+}
+
+/* ----- hovers ----- */
+
+.feature, .feature-scroll, .thumb-link, .thumb-link .thumb-title-block, .feature-list a, .btn, .tag {
+	transition: opacity 0.25s ease;
+	opacity: 1;
+}
+
+.feature:hover, .feature-scroll:hover, .thumb-link:hover, .tag:hover {
+	opacity: .85;
+}
+
+.thumb-link:hover .thumb-title-block, .feature-list a:hover, .btn:hover {
+	opacity: .6;
+}
+
+.btn.emphasis:hover {
+	opacity: .75;
+}
+
+.info-text a, p.copy a, .info-text a.icon-link-no-border, .info-text a.icon-link-no-border .link-text {
+	transition: background-color 0.25s ease;
+	background-color: inherit;
+}
+
+.info-text a:hover, p.copy a:hover, .info-text a.icon-link-no-border:hover .link-text {
+	background-color: $co-gray-light05;
+}
+
+.info-text a.icon-link-no-border:hover {
+	background-color: inherit;
+}
+
+
+
+/* ----- additional media queries ----- */
+
+@media screen and (max-width: $bp-main) {
+	.hide-sm {
+		display: none;
+	}	
+}
+
+@media screen and (min-width: $bp-main) {
+	.hide-lg {
+		display: none;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	select {
+	  background-image: none;
+	}
+}
+
+
+
+
+
+
+
+

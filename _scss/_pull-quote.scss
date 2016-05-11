@@ -1,0 +1,76 @@
+/* - quote - */
+
+.quote-container {
+	padding: 0 $gutter/2;
+	margin: 0 auto;
+	@include breakpoint($bp-wide) {
+		width: $col-10;
+	}
+}
+
+.quote, .chapter__content .quote {
+		text-align: center;
+		margin: 0;
+	&__text, p {
+		color: black;
+		font-family: $cooper-medium;
+		font-weight: $regular;
+		font-size: $size-h3;
+		line-height: $lineheight-med;
+		width: 100%;		
+		margin: 0 auto;
+		padding: 0;
+		margin-bottom: .6em;
+	}
+	
+	&__credit.info-text {
+		text-transform: none;
+		font-size: $size-p-sm;
+		letter-spacing: 0;
+		margin-bottom: 2.5em;
+	}
+	
+	.btn {
+		margin: 1em 0 1.25em 0;
+	}
+}
+
+.quote:before, .quote:after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 1px;
+	border-top: 2px solid $co-gray-flat2;
+	margin: 0 auto;
+}
+.quote:before {
+	margin-bottom: 2em;
+}
+.quote:after {
+	margin-top: 2.25em;
+}
+
+.number, h1.number {
+	line-height: 1em;
+	margin: .1em 0;
+}
+
+/* ----- additional media queries ----- */
+
+@media screen and (max-width: $bp-main) {
+	
+	.quote, .chapter__content .quote {
+		&__text, p {
+			font-size: $size-h3-m;
+		}
+		&__quote-credit.info-text {
+			font-size: $size-p-sm;
+		}
+		
+		.btn {
+			width: inherit;
+		}
+	}
+
+
+}

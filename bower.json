@@ -1,0 +1,19 @@
+{
+  "name": "fl-base-blueprint",
+  "authors": [
+    "Chris Amico <eyeseast@gmail.com>"
+  ],
+  "description": "Base styles for FRONTLINE projects",
+  "main": "",
+  "moduleType": [],
+  "license": "null",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

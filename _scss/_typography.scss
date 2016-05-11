@@ -1,0 +1,276 @@
+h1, h2, h3, h4, h5, h6, p, .info-text {
+	margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $cooper-medium;
+	font-weight: normal;
+	color: black;
+	line-height: $lineheight-sm;
+	margin-bottom: $margin-type;
+}
+
+h1.on-dark, h2.on-dark, h3.on-dark, h4.on-dark, h5.on-dark, h6.on-dark {
+	color: white;
+}
+
+.display {
+	font-family: $cooper-light;
+	text-transform: uppercase;
+	letter-spacing: $letterspacing;
+	line-height: $lineheight-sm;
+}
+
+.display.super {
+	font-family: $cooper-medium;
+	font-size: $size-dis-super;
+	letter-spacing: 0;
+	color: $fl-red;
+}
+
+.display.large {
+	font-size: $size-dis-lg;	
+}
+
+.display.medium {
+	font-size: $size-dis-med;
+	letter-spacing: $letterspacing-mid;	
+}
+
+h1 {
+	font-size: $size-h1;
+}
+
+h2 {
+	font-size: $size-h2;
+}
+
+h3 {
+	font-size: $size-h3;
+}
+
+h4 {
+	font-size: $size-h4;
+}
+
+h5 {
+	font-size: $size-h5;
+}
+
+h6 {
+	font-size: $size-h6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	.icon-inline {
+		margin-right: .05em;
+		img {
+			width: 1.1em;		
+			vertical-align: -.125em;
+		}
+	}
+}
+
+.article-body h2 {
+	border-top: $hr;
+	padding-top: $margin-type;
+}
+
+.article-body h3, .article-body h6 {
+	color: $co-gray-mid4;
+}
+
+p, .info-text, .btn, .copy {
+	font-family: $bernino;
+}
+
+.copy {
+	font-size: $size-body;	
+	color: $co-copy;
+	line-height: $lineheight-lg;
+}
+
+.copy.small {
+	font-size: $size-p-sm;
+}
+
+.copy.caption {
+	font-size: $size-info;
+	color: $co-gray-flat4;
+	line-height: $lineheight-med;
+}
+
+.copy.on-dark {
+	color: $co-white-mid6;
+}
+
+.copy {
+	a {
+		color: inherit;
+		border-bottom: $underline-gray4;
+	}
+}
+
+.info-text {
+	font-family: $bernino-semi;
+	font-size: $size-info;
+	letter-spacing: $letterspacing;
+	text-transform: uppercase;
+	color: $co-gray-mid4;
+	
+	.lowercase {
+		letter-spacing: 0;
+		text-transform: none;
+	}
+	
+	.slash {
+		margin: 0 .25em;
+		color: $co-gray-mid2;		
+	}
+	
+	a {
+		color: inherit;
+		border-bottom: $underline-gray2;
+	}
+	
+	a.icon-link-no-border {
+		border-bottom: none;
+		.link-text {
+			border-bottom: $underline-gray2;
+		}	
+	
+		.inline-icon-lg {
+			vertical-align: -.7em;
+			margin-right: .1em;
+			
+			img {
+				width: 2.2em;
+				height: 2.2em;				
+			}
+		}
+	}	
+}
+
+.info-text.small {
+	font-size: $size-info-sm;
+}
+
+.info-text.on-dark {
+	color: $co-white-mid6;
+	font-family: $bernino;
+	
+	.slash {
+		color: $co-white-mid3;
+	}
+}
+
+.info-text.lowercase {
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.btn {
+	font-family: $bernino-semi;
+	font-size: $size-info-lg;
+	color: black;
+	border: 1px solid black;
+	text-transform: uppercase;
+	letter-spacing: $letterspacing;
+	padding: .9em 2em .7em 2em;
+	display: inline-block;
+	line-height: $margin-type-lg;
+	text-align: center;
+	
+	.icon-inline {
+			margin-right: .4em;
+			img {
+				width: 1.46666667em;
+				height: 1.46666667em;			
+				vertical-align: -.35em;
+			}
+		}	
+}
+
+.btn.emphasis {
+	background-color: black;
+	color: white;
+}
+
+.btn.on-dark {
+	color: white;
+	border-color: white;
+}
+
+.tag {
+	display: inline-block;
+	background-color: $co-gray-mid4;
+	padding: .275em .35em .1em .35em;
+	text-decoration: none;
+	
+	.info-text {
+		color: white;
+		font-family: $bernino-semi;
+		margin: 0;
+		line-height: 1em;
+	}
+}
+
+.tag.info-text.white {
+	background-color: white;
+	color: black;
+	font-family: $bernino-semi;
+}
+
+/* ----- additional media queries ----- */
+
+@media screen and (max-width: $bp-main) {
+
+	h1.display.super {
+		font-size: $size-dis-super-m;
+	}
+	h1.display.large {
+		font-size: $size-dis-lg-m;	
+		line-height: $lineheight-exsm;		
+	}
+	h1.display.medium {
+		font-size: $size-dis-med-m;		
+	}
+	h1 {
+		font-size: $size-h1-m;
+	}
+	h2 {
+		font-size: $size-h2-m;
+	}
+	h3 {
+		font-size: $size-h3-m;
+	}	
+	h4 {
+		font-size: $size-h4-m;
+	}	
+	h5 {
+		font-size: $size-h5-m;
+	}	
+	h6 {
+		font-size: $size-h6-m;
+	}	
+	.info-text {
+		font-size: $size-info;
+	}
+	.info-text.small {
+		font-size: $size-info-sm;
+	}	
+	p.copy {
+		font-size: $size-body-m;
+	}
+	p.copy.small {
+		font-size: $size-p-sm;
+	}
+	p.copy.caption {
+		font-size: $size-info;
+	}
+	
+	.btn {
+		width: 100%;
+	}	
+	
+}

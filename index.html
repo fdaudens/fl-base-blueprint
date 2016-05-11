@@ -2,6 +2,9 @@
 
 {% block content %}
 <div class="container">
-    <h1>Welcome to FRONTLINE. Edit `index.html` to get started.</h1>
+    <div class="content col-12">
+        {{ read_file('_blueprint/README.md')|markdown|safe }}
+    </div>
+
 </div>
 {% endblock content %}

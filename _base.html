@@ -84,6 +84,11 @@ var _sf_async_config={uid:22138, domain:'frontline.pbs.org'};
 </script>
 {% endblock chartbeat_end %}
 
+{% block pbs_chrome %}
+  <script>var PBS_CHROME_CONFIG = {"api_key": "f8e87002-2f69-46ec-a4ad-dff708cc089b"};</script>
+  <script type="text/javascript" src="http://pbs.global-chrome-prod.cdn.s3.amazonaws.com/media/js/gc.js"></script>
+{% endblock %}
+
 {% block library_scripts %}
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 {% endblock library_scripts %}

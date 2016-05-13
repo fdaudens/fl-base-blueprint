@@ -1,1 +1,3 @@
 -e git+git@github.com:tarbell-project/tarbell.git#egg=tarbell
+Flask-Assets
+libsass

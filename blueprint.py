@@ -3,7 +3,7 @@ Base blueprint for FRONTLINE projects
 """
 import os
 import shutil
-from flask import Blueprint, url_for
+from flask import Blueprint, url_for, g
 from tarbell.hooks import register_hook
 
 # rename this in forks
@@ -14,6 +14,19 @@ COPY_DIRS = ('_scss', 'font')
 
 blueprint = Blueprint('base', __name__)
 root = os.path.realpath(os.path.dirname(__file__))
+
+@blueprint.record_once
+def app_setup(state):
+    """
+    Add extensions and configuration to site.app
+    """
+    # use project config
+    if 'site' in state.options:
+        site = state.options['site']
+        #state.app.config.from_object(site.project)
+
+    # assets config
+
 
 @blueprint.app_template_global('p')
 def path_helper(path, **kwargs):

@@ -3,7 +3,7 @@ Base blueprint for FRONTLINE projects
 """
 import os
 import shutil
-from flask import Blueprint, url_for
+from flask import Blueprint, g, url_for
 from tarbell.hooks import register_hook
 
 # rename this in forks
@@ -22,6 +22,23 @@ def path_helper(path, **kwargs):
     """
     return url_for('preview', path=path, **kwargs)
 
+
+@blueprint.app_context_processor
+def add_to_context():
+    """
+    General-purpose context processor for this blueprint
+    """
+    site = g.current_site
+    context = {}
+
+    # no assumptions about project config
+    if "production" in getattr(site.project, 'S3_BUCKETS', {}):
+        context['BASE_URL'] = "http://{production}".format(**site.project.S3_BUCKETS)
+    else:
+        # set a safe default
+        context['BASE_URL'] = ""
+
+    return context
 
 @register_hook('newproject')
 def copy_project_files(site, git):

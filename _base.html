@@ -16,7 +16,7 @@
     {% endblock %}
 
     {% block opengraph %}
-    <meta property="og:url" content="http://{{ ROOT_URL ~ request.path }}">
+    <meta property="og:url" content="http://{{ BASE_URL ~ request.path }}">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:type" content="website">
     {% if opengraph_image %}

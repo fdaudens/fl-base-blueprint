@@ -37,3 +37,7 @@ def copy_project_files(site, git):
         src = os.path.join(root, dirname)
         dst = os.path.join(site.path, dirname)
         shutil.copytree(src, dst)
+
+    message = "Copied blueprint assets into project"
+    git.add('.')
+    git.commit(m=message)
